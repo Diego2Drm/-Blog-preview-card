@@ -1,8 +1,18 @@
+import img from './images/illustration-article.svg';
+import avatar from './images/image-avatar.webp'
+import { Card } from "./components/Card"
 
 function App() {
   return (
     <>
-      <h1 className="text-Yellow text-2xl font-bold bg-Gray-950 p-10 shadow-rose-900 shadow-2xl font-Figtree">Hello React js + TypeScript + Tailwind Css</h1>
+      <Card
+        illustration={img}
+        date='Published 21 Dec 2023.'
+        title='HTML & CSS foundations'
+        paragraph='These languages are the backbone of every website, defining structure, content, and presentation.'
+        avatar={avatar}
+        name='Greg Hooper'
+      />
     </>
   )
 }
